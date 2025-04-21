@@ -2,8 +2,6 @@
 
 **Date:** April 21, 2025
 
-**Role:** Software Engineer
-
 **Task 1:** Optimize the card-flip logic for smooth performance.
 
 ### Key Changes Made in Code:
@@ -101,7 +99,4 @@
 
 I have noticed that in the `handleCardClick` function, I check `flippedCards.length < 2`. While the `useEffect` hook also triggers when `flippedCards.length === 2`, after examination, I understood that this initial check in `handleCardClick` is intentional and necessary. It acts as a gatekeeper, preventing the user from rapidly clicking more than two cards before the game logic has a chance to process the first two. Removing this check could lead to unexpected behavior and a less intuitive user experience, as the `flippedCards` array might temporarily hold more than two cards, potentially breaking the matching logic designed for pairs. Therefore, this "dual check" is not redundant but rather a safeguard for the game's intended interaction flow. Hence, I am not changing it!
 
-**Complete Code After Optimization:** (frontend/src/memoryCardGame/MemoryCardGame.jsx)
 
-```javascript
-// [Rest of the code provided in the original text]
