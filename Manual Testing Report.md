@@ -1,5 +1,5 @@
-## Manual Testing Report: Card Memory Game
-
+## Testing Report: Card Memory Game
+# Testing files in -> [card-Memory/](https://github.com/KARANsinghBISHTT/Card-Memory/tree/main/frontend/src/components/__tests__)
 **Date:** April 21, 2025
 
 ### 1. Introduction
